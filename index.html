@@ -6,12 +6,47 @@
   <body>
 
     <a-scene light="defaultLightsEnabled: false">
-
+      <a-sky radius="15" src="https://marketplace.canva.com/MACV9soLIIc/1/screen/canva-milky-way%2C-space%2C-universe%2C-night-sky%2C-background-MACV9soLIIc.jpg"></a-sky>
+       <a-sphere src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIzWU3w-6owSfA6sGB9bhqBeCAKCtzMswiYwbDmMRj93Jx2V9u" position = "0 0 0" radius = "6">  
+      <a-animation
+          attribute="rotation"
+          dur="10000"
+          fill="none"
+          from="0 0 0"
+          to="0 -360 0"
+          easing="linear"
+          repeat="indefinite">
+        </a-animation>
+        </a-sphere>
+        <a-torus  position ="0 0 0" radius= "7" radius-tubular = ".07" src="http://cdn.shopify.com/s/files/1/1279/2135/products/il_fullxfull.1292754687_8rbx_grande.jpg?v=1500506791">
+          <star>
+            <a-sphere position ="3 3 -1" radius="1" color=yellow></a-sphere>
+          </star>
+          <a-animation
+           attribute="rotation"
+          dur="100000"
+          fill="none"
+          from="0 0 0"
+          to="0 360 0"
+          easing="linear"
+          repeat="indefinite">
+          </a-animation>
+        </a-torus>
+        
+        
+        
+        
+        
+        
+      <!--<a-sphere position ="0 0 0" radius ="2" color=orange></a-sphere>-->
+      <a-entity light="type: ambient"></a-entity>
+      <!--<a-dodecahedron position = "1 3 1" color= blue></a-dodecahedron>-->
+      <!--<a-torusknot position= " -1 -2 -1" color=fuchsia></a-torusKnot>-->
       <!-- light source element -->
       <!-- <a-entity light="type: ambient"></a-entity> -->
 
       <!-- our camera aka user perspective element -->
-      <!-- <a-entity camera look-controls wasd-controls position="0 0 15"></a-entity> -->
+       <a-entity camera look-controls wasd-controls position="0 0 15"></a-entity> 
 
       <!-- our initial sphere in the center of the scene -->
       <!-- your sphere here! -->
